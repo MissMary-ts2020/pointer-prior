@@ -3,8 +3,8 @@
 int main() {
 	char arr1[] = "abcdef";
 	char arr2[] = "abcder";
-	char* p1 = "abcdef";
-	char* p2 = "abcdef";
+	const char* p1 = "abcdef";//复习，这样会让指针变成只读的
+	const char* p2 = "abcdef";//如果const在*后面则是这个变量无法改变
 	if (arr1 == arr2) {
 		printf("1");
 	}
